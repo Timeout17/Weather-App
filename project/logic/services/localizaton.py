@@ -26,7 +26,3 @@ class LoocalizationClass():
 
             return (data[0]["lat"], data[0]["lon"])
 
-
-if __name__ == "__main__":
-    local = LoocalizationClass()
-    print(local.getCoordinates("budapest"))

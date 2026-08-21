@@ -6,10 +6,10 @@ class LLMServiceClass():
     def Chatservice(client: str, content: str):
         try:
             response = client.chat.completions.create(
-                model = "llama-3.3-70b-versatile",
+                model = "openai/gpt-oss-20b",
                 messages = content,
                 temperature = 0.5,
-                max_completion_tokens = 1024,
+                max_completion_tokens = 4096,
             )
 
 

@@ -9,7 +9,7 @@ API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 class LoocalizationClass():
 
-    async def getCoordinates(self, city_name: str) -> tuple[int, int]:
+    async def getCoordinates(self, city_name: str) -> tuple[float, float]:
 
         async with httpx.AsyncClient() as client:
 

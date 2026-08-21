@@ -16,10 +16,3 @@ class CityLoaderClass():
             print(e)
 
         return city_names
-
-    
-
-        
-if __name__ == "__main__":
-    x = CityLoaderClass()
-    print(x.loadfile("citynames.txt"))

@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-TEXT_BACKEND_URL = "http://localhost:8000/weather"
+TEXT_BACKEND_URL = "http://backend:8000/weather"
 
 st.title("Weather bot")
 

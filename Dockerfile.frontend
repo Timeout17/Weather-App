@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["uvicorn", "project.backend.system:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["streamlit", "run", "project/frontend/app.py", "--server.address=0.0.0.0", "--server.port=8501"]

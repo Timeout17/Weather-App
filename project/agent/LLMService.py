@@ -11,10 +11,10 @@ class LLMServiceClass():
                 temperature = 0.5,
                 max_completion_tokens = 4096,
             )
-
+            return response
 
         except RateLimitError as r:
             print("API limit overloaded")
             print(r)
 
-        return response
+            return None

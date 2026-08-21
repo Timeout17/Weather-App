@@ -37,12 +37,4 @@ class MakeAnswer():
         )
 
         return ai_message.choices[0].message.content
-        
-import asyncio
-
-if __name__ == "__main__":
-    x = MakeAnswer()
-
-    result = asyncio.run(x.make_answers())
-
-    print(result)
+    
